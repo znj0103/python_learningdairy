@@ -24,5 +24,6 @@ for i in range(x, 1 ,-1):
 print('公约数为：',q)   
 
 print("hello world")
+print("test again")
 
 
