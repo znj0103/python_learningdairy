@@ -21,4 +21,8 @@ for i in range(x, 1 ,-1):
                 if q == z:
                     return (q)
 
-print('公约数为：',q)                
+print('公约数为：',q)   
+
+print("hello world")
+
+
