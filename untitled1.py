@@ -19,12 +19,12 @@ for i in range(x, 1 ,-1):
             if y%j == 0:
                 q = j
                 if q == z:
-                    return (q)
+                    break
 
 print('公约数为：',q)   
 
 print("hello world")
-print("aaaa")
+print("b")
 
 
 
