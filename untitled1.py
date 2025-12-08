@@ -146,3 +146,39 @@ Created on Tue Mar 25 13:24:46 2025
 #         break
 
 #DAY07
+#分支和循环实战
+#例1 100以内的素数 第一次没做出来
+# print('100内的素数有：',end=' ')
+# for num in range(1,101,1):
+#     is_prime = True
+#     for i in range(2,num,1):
+#         if num%i ==0:
+#             is_prime = False
+#             break
+#     if is_prime:
+#         print(num,end=',')
+
+#例2 斐波那契数列 改进：a,b = b ,a+b;i变成_
+# b = 1
+# print('1','1',end=',')
+# for i in range(1,21):
+#    sum = a+b
+#    a = b
+#    b = sum
+#    print(sum,end=',')
+
+#例3 寻找水仙花数
+# for i in range(100,1000):
+#     a = i//100
+#     b = i//10%10
+#     c = i % 10
+
+#     if i == a**3 + b**3 + c**3:
+#         print(f'{i}为水仙花数')
+
+# #例3.2 正整数反转
+# num = int(input(':'))
+# while num != 0:
+#     out = num%10
+#     print(out,end='')
+#     num //= 10
