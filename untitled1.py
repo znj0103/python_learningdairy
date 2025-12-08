@@ -66,3 +66,83 @@ Created on Tue Mar 25 13:24:46 2025
 #     print(f'面积={area}')
 # else:
 #     print("不能构成三角形")
+
+
+#DAY06 循环结构
+# for-in循环
+#例1 1-100整数求和
+#例2 偶数求和 更改（1，101，2）
+# result = 0
+# for i in range(1,101,1):
+#     result += i
+
+# print(f'结果是{result}')
+
+# #例2.2 利用sum进行求和
+# print(sum(range(1,101,2)))
+#while循环
+#例1.2 利用while循环求和
+# i = 1
+# result = 0
+# while i <=100:
+#     result += i 
+#     i += 1
+# print(f'结果是{result}')
+#break continue
+#例2.3 利用continue
+# total = 0
+# for i in range(1,101):
+#     if i%2 != 0:
+#         continue
+#     total += i
+# print(f'结果是{total}')
+
+#例3 打印乘法口诀表
+# for j in range(1,10):
+#     for i in range(1,j+1):
+#         if i <= j:
+#             # print(i)
+#             # print(j)
+#             print(f'{i}*{j}={i*j}',end=' ')
+#     print('\t')
+
+#例4 判断素数
+#增进：判断素数只要？（未完成）
+# number = int(input('请输入大于1的整数：'))
+# p=000
+# if number %1 ==0 and number >=1:
+#     for i in range (2,number,1):
+        
+#         if number %i == 0:
+#             print(f'{i}')
+#             p = 111
+#             break
+#         else:p = 222
+#     print(f'{number%i,p}')
+
+
+# match p:
+#     case 111:print('不是素数')
+#     case 222:print('是素数')
+#     case _:print('请输入正确的数字')
+
+#例5 最大公约数
+# import sys
+
+# a = int(input('输入第一个数：'))
+# b = int(input('输入第二个数：'))
+# for i in range(a,0,-1):
+#     if a%i ==0:
+#         print(f'a:{i}')
+#         if b%i == 0:
+#             print(i)
+#             sys.exit()
+#更好的解,更好的：欧几里得算法
+# x = int(input('输入第一个数：'))
+# y = int(input('输入第二个数：'))
+# for i in range(x,0,-1):
+#     if x%i == 0 and y%i == 0:
+#         print(i)
+#         break
+
+#DAY07
