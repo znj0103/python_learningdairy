@@ -182,3 +182,68 @@ Created on Tue Mar 25 13:24:46 2025
 #     out = num%10
 #     print(out,end='')
 #     num //= 10
+
+#例4 百钱百鸡问题
+#穷举法,更好的：c = 100-a-b
+# money = 100
+# for a in range(20,-1,-1):
+#     for b in range(0,34,1):
+#         for c in range(0,100,3):
+#             if a*5+b*3+c//3 == 100 and a+b+c ==100:
+#                 print(f'公鸡{a}只，母鸡{b}只，小鸡{c}只。')
+
+#例5 CRAPS赌博游戏
+# import random
+# money = 1000
+
+# win_number = 0
+# while money >0:
+#     if win_number == 0 :
+#         duzhu = int(input(f'现在你还有{money}元，请下注：'))
+#         if duzhu == 0:
+#              break
+#         else:
+#             number1 = random.randint(1,7)
+#             number2 = random.randint(1,7)
+#             print(f'骰子：{number1},{number2}')
+#             if number1+number2 in [7,11]:
+#                 print(f'玩家首次就获胜,赢了{duzhu}元')
+#                 money += duzhu
+#             elif number1+number2 in [2,3,12]: 
+#                 money -= duzhu
+#                 print(f'庄家获胜，现在你还有{money}元钱')
+#             else: 
+#                 win_number = number1+number2
+#                 print(f'平局，现在你还有{money}元钱，获胜数字为{win_number
+#                                                     }')
+#     else:
+#         number1 = random.randint(1,7)
+#         number2 = random.randint(1,7)
+#         print(f'骰子：{number1},{number2}')
+#         if number1+number2 == win_number:
+#                 print(f'玩家终于获胜,赢了{duzhu}元')
+#                 money += duzhu
+#                 win_number = 0
+#         elif number1+number2 == 7:
+#                 money -= duzhu
+#                 print(f'庄家获胜，现在你还有{money}元钱')
+#                 win_number = 0
+# else:print('玩家破产')
+
+#DAY08 常用数据结构 列表-1
+#list 数据类型 容器
+# items1 = [35, 12, 99, 68, 55, 35, 87]
+# print(type(items1))
+
+# items8 = ['apple', 'waxberry', 'pitaya', 'peach', 'watermelon']
+# items8[1:3] = ['x', 'o']
+# print(items8)
+
+#例1 重写骰子代码
+# import random
+# items = [0,0,0,0,0,0]
+# for _ in range(6000):
+#     number = random.randint(1,6) - 1
+#     items[number] +=1
+# print(items)
+#终于学完了！！！！！！！累死我也（2025，12，9，21:37）
