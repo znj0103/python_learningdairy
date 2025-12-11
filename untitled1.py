@@ -247,3 +247,44 @@ Created on Tue Mar 25 13:24:46 2025
 #     items[number] +=1
 # print(items)
 #终于学完了！！！！！！！累死我也（2025，12，9，21:37）
+
+#DAY09 常用数据结构 列表-2
+#插入末尾 append；插入 insert ；删除末尾pop；删除指定 remove；删除所有clear
+#寻找.index('',n) 计数 count
+#排序 sort ；反排序 reverse
+#列表生成式 
+#例1 创建1-99能被3或5整除的数字列表
+# items = []
+# for i in range(1,100):
+#     if i%3 == 0 or i%5 == 0:
+#         items.append(i)
+# print(items)
+#例2 num2为num1的平方
+# num1 = [1,2,3,4,5,6]
+# num2 = [num ** 2 for num in num1 ]
+# print(num2)
+#例3 将num1中大于50的数都放进num2中
+# num1 = [2,30,58,90,100,4]
+# num2 = [num for num in num1 if num >50]
+# print(num2)
+
+#嵌套列表
+#例3 录入5个学生3门课的成绩
+# score = []
+# for i in range(1,6):
+#     temp = []
+#     for j in range(1,4):
+#         num = int(input(f'请输入第{i}位学生的第{j}门成绩'))
+#         temp.append(num)
+#     score.append(temp)
+# print(score)
+#例3.2 通过随机数产生成绩
+# import random
+# scores = [[random.randrange(60,101) for _ in range(3)] for _ in range(5)]
+# print(scores)
+
+#列表的应用
+#例4 双色球
+import random
+balls = [[random.randrange(1,34) for _ in range(6)],[random.randrange(1,17)]]
+print(balls)
